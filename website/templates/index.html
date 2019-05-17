@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title> Edison Timmar.se</title>
-		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css') }}"/>
 		
 	</head>
 	<body>
@@ -26,13 +26,13 @@
                         {% if status == "0" %}
                         <a href="/on/">    
                             <div class="select" id="på">
-                                <img src="green buttom.jpg" width="35px" hight=auto>
+                                <img src="{{ url_for('static', filename = 'green buttom.jpg') }}" width="35px" hight=auto>
                             </div>
                         </a>
                         {% elif status == "1" %}
                         <a href="/off/">
                             <div class="select" id="av">
-                                <img src="red buttom.jpg" width="35px" hight=auto>
+                                <img src="{{ url_for('static', filename = 'red buttom.jpg') }}" width="35px" hight=auto>
                             </div>
                         </a>
                         {% endif %}
@@ -44,7 +44,7 @@
 					<p> Vår produkt är en mekanisk strömbrytare som styrs med hjälp av en enhet som kan ta emot och skicka signaler.</p>
 					<p>Denna brytare går att ställa in så att de önskade uttagen kan slås av/på vid önskat tillfälle eller efter ett visst avstånd när man lämnat huset.</p>
 					<br>
-					<img src="24-timmar-15835404.jpg" width="300px" hight= auto>
+					<img src="{{ url_for('static', filename = '24-timmar-15835404.jpg') }}" width="300px" hight= auto>
 					<p> Är det enligt dig/er mer önskvärt att kunna slå av och på när man vill eller efter ett visst avstånd (eller båda)</p> 
 				<div>
 						<button onclick="showgrupp()"> click here </button>
@@ -59,5 +59,5 @@
 			</div>
 		</div>
 	</body>
-	<script src="java.js"></script>
+	<script src="{{ url_for('static', filename = 'java.js') }}"></script>
 </html>

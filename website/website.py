@@ -43,6 +43,7 @@ app = Flask(__name__)
 manager = Manager(app)
 manager.add_command('runserver', CustomServer())
 
+
 @app.route('/')
 def index(name=None):
 	status = get_status()
