@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
-<body>
-	{% if status == "0" %}
-		<a href="/on/">Turn on!</a>
-	{% elif status == "1" %}
-		<a href="/off/">Turn off!</a>
-	{% endif %}
-
-</body>
+	<head>
+		<title> Edison Timmar.se</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		
+	</head>
+	<body>
+		<div class="delar">
+			<div class="header">
+				<h1> Edison Timmar</h1>
+				<p> För mindre spänning i vardagen.</p>
+			</div>
+			<br>
+			<br>
+			<div  id="del">
+				<div id="navid">
+					<h2> Meny</h2>
+					<ul>
+						<li><a class="selected" href=""> home</a></li>
+						<li> <a href=""> om produkt</a></li>
+						<li> <a href=""> inställningar</a></li>
+						<li> <a href=""> Timmar Stäng av/på</a></li>
+					</ul>
+                    <h3 class="selects">
+                        {% if status == "0" %}
+                        <a href="/on/">    
+                            <div class="select" id="på">
+                                <img src="green buttom.jpg" width="35px" hight=auto>
+                            </div>
+                        </a>
+                        {% elif status == "1" %}
+                        <a href="/off/">
+                            <div class="select" id="av">
+                                <img src="red buttom.jpg" width="35px" hight=auto>
+                            </div>
+                        </a>
+                        {% endif %}
+                    </h3>
+				</div>
+				<div id="Main">
+					<h2> Hemsida</h2>
+					<br>
+					<p> Vår produkt är en mekanisk strömbrytare som styrs med hjälp av en enhet som kan ta emot och skicka signaler.</p>
+					<p>Denna brytare går att ställa in så att de önskade uttagen kan slås av/på vid önskat tillfälle eller efter ett visst avstånd när man lämnat huset.</p>
+					<br>
+					<img src="24-timmar-15835404.jpg" width="300px" hight= auto>
+					<p> Är det enligt dig/er mer önskvärt att kunna slå av och på när man vill eller efter ett visst avstånd (eller båda)</p> 
+				<div>
+						<button onclick="showgrupp()"> click here </button>
+						<p id = "Students" style="display:none">Zaed kazem, Peter, joel Göransson, joel Nordlander.Erik.</p>
+				</div>
+					
+			</div>
+			<div id="foot">
+				<a href="https://www.miun.se/k"> kontakta oss</a>
+				copyright & copy; 2019 Eidson grupp.
+				
+			</div>
+		</div>
+	</body>
+	<script src="java.js"></script>
 </html>

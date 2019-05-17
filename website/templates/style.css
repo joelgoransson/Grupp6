@@ -1,0 +1,65 @@
+body {
+	background-color: #EEE;
+	font-family: Helvetica, Arial, sans-serif;
+}
+a { 
+	text-decoration: none;
+	color : red;
+}
+h1, h2, h3, h4 {
+	margin: 0;
+}
+.delar	{
+	background-color:rgba(255, 255, 255, 0.774);
+	max-width: 800px;
+	margin:  auto;
+}
+.header {
+	background-color:  rgb(72, 110, 1);
+	color : #0d0208e0;
+	text-align: center;
+	padding : 10 px;
+}
+#del {
+	padding-block-end: 69 px;
+}
+#navid	{
+	Width : 180px;
+	float: left;
+}
+#navid u1 {
+	list-style-type: none;
+	padding : 0
+}
+
+#navid.selected{
+	font-weight: bold;
+}
+.selects{
+
+	text-align: left;
+}
+.select{
+	display: inline-block;
+	border: 10px solid greenyellow;
+	border-radius: 60%;
+	margin: 5px;
+	padding: 10px;
+	transition: all 1s ease;
+}
+.select:hover{
+	cursor: pointer;
+	background: orangered;
+}
+
+#Main{
+	width : 600px;
+	float: right;
+}
+#foot	{
+	clear : both;
+	padding: 10 px;
+	background-color: #FFFF00;
+	color : rgb(55, 0, 255);
+	text-align: center;
+}
