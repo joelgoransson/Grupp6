@@ -49,19 +49,19 @@
 					t är ett antal imgs av imgs, i är ett räknare-->
 					<div id="images">
 							<div class="pic">
-									<img src="photo1.jpg" style="width:300px">
+								<img src="{{ url_for('static', filename = 'photo1.jpg') }}" width="300px" hight=auto>
 								</div>
 								
 								<div class="pic">
-									<img src="photo2.jpg" style="width:300px">
+									<img src="{{ url_for('static', filename = 'photo2.jpg') }}" width="300px" hight=auto>
 								</div>
 								
 								<div class="pic">
-									<img src="photo4.jpg" style="width:300px">
+									<img src="{{ url_for('static', filename = 'photo4.jpg') }}" width="300px" hight=auto>
 								</div>
 
 								<div class="pic">
-									<img src="photo3.jpg" style="width:340px">
+									<img src="{{ url_for('static', filename = 'photo3.jpg') }}" width="300px" hight=auto>
 									</div>
 					</div>
 
