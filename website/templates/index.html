@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+</html> 
 	<head>
-		<title> Edison Timmar.se</title>
+		<title> Edison Timer.se</title>
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css') }}"/>
-		
+
 	</head>
 	<body>
 		<div class="delar">
 			<div class="header">
-				<h1> Edison Timmar</h1>
+				<h1> Edison Timer</h1>
 				<p> För mindre spänning i vardagen.</p>
 			</div>
 			<br>
@@ -20,7 +20,7 @@
 						<li><a class="selected" href=""> home</a></li>
 						<li> <a href=""> om produkt</a></li>
 						<li> <a href=""> inställningar</a></li>
-						<li> <a href=""> Timmar Stäng av/på</a></li>
+						<li> <a href=""> Timer Stäng av/på</a></li>
 					</ul>
                     <h3 class="selects">
                         {% if status == "0" %}
@@ -44,18 +44,38 @@
 					<p> Vår produkt är en mekanisk strömbrytare som styrs med hjälp av en enhet som kan ta emot och skicka signaler.</p>
 					<p>Denna brytare går att ställa in så att de önskade uttagen kan slås av/på vid önskat tillfälle eller efter ett visst avstånd när man lämnat huset.</p>
 					<br>
-					<img src="{{ url_for('static', filename = '24-timmar-15835404.jpg') }}" width="300px" hight= auto>
 					<p> Är det enligt dig/er mer önskvärt att kunna slå av och på när man vill eller efter ett visst avstånd (eller båda)</p> 
-				<div>
-						<button onclick="showgrupp()"> click here </button>
-						<p id = "Students" style="display:none">Zaed kazem, Peter, joel Göransson, joel Nordlander.Erik.</p>
-				</div>
-					
+					<!-- måste har för varje annars kommer inte fungera 
+					t är ett antal imgs av imgs, i är ett räknare-->
+					<div id="images">
+							<div class="pic">
+									<img src="photo1.jpg" style="width:300px">
+								</div>
+								
+								<div class="pic">
+									<img src="photo2.jpg" style="width:300px">
+								</div>
+								
+								<div class="pic">
+									<img src="photo4.jpg" style="width:300px">
+								</div>
+
+								<div class="pic">
+									<img src="photo3.jpg" style="width:340px">
+									</div>
+					</div>
+
 			</div>
+			<br>
 			<div id="foot">
+					<div>
+							<button onclick="showgrupp()"> click here </button>
+							<p> för att kunna see arbetsguppen som har jobbat på projektet. </p>
+							<p id = "Students" style="display: none">Zaed kazem, Peter Sjödin, Joel Göransson, Joel Nordlander, Erik Björklund.</p>
+					</div>
 				<a href="https://www.miun.se/k"> kontakta oss</a>
 				copyright & copy; 2019 Eidson grupp.
-				
+
 			</div>
 		</div>
 	</body>
